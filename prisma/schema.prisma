@@ -45,7 +45,7 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
-  username      String?   @unique
+  username      String?   
   role          UserRole  @default(BOSS)
   accounts      Account[]
   sessions      Session[]
