@@ -1,7 +1,15 @@
 import { Button } from "@/ui/Button";
 import Link from "next/link";
+import { getCurrentUser, getUserRole } from "./auth/actions/getUser";
 
-export default function Home() {
+export default async function Home() {
+  // const user = await getCurrentUser()
+  const userRole = await getUserRole()
+  console.log(userRole);
+  const currentUser = await getCurrentUser()
+  console.log(currentUser);
+  
+  
   return (
     <main className="flex justify-center items-center h-dvh flex-col gap-4">
       <p>The app is under active development</p>
@@ -12,6 +20,7 @@ export default function Home() {
       <Link href={'/boss'}>
       <Button type={"submit"} style={"w-[400px]"}>Boss Page</Button>
       </Link>
+      {/* {user?.role} */}
     </main>
   );
 }

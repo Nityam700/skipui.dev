@@ -62,9 +62,11 @@ export default async function page() {
             />
             Logout
           </Button>
+          <Link href={"/"} className=" text-center">
+            Back
+          </Link>
         </form>
       )}
-      {session?.user?.name}
     </div>
   );
 }
