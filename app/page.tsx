@@ -17,7 +17,7 @@ export default async function Home() {
       <Link href={'/auth/signin'}>
       <Button type={"submit"} style={"w-[400px]"}>Auth Page</Button>
       </Link>
-      <Link href={'/boss'}>
+      <Link href={'/boss-cabin'}>
       <Button type={"submit"} style={"w-[400px]"}>Boss Page</Button>
       </Link>
       {/* {user?.role} */}

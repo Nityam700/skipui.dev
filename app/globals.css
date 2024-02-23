@@ -6,3 +6,8 @@ body {
   background-color: #101010;
   color: azure;
 }
+
+.grid_col_50_1fr{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
