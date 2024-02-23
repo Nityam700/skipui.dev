@@ -20,6 +20,7 @@ export default async function Home() {
       <Link href={'/boss-cabin'}>
       <Button type={"submit"} style={"w-[400px]"}>Boss Page</Button>
       </Link>
+      {userRole}
       {/* {user?.role} */}
     </main>
   );
